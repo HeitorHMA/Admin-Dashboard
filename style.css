@@ -1,0 +1,88 @@
+*{
+    border: 1px solid black;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+.header{
+    padding: 0.8rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+    grid-row-end: 1;
+    background-color: white;
+    color: black;
+}
+.navbar{
+    padding: 0.8rem;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: blue;
+    color: white;
+}
+.page{
+    padding: 0.8rem;
+    grid-column-start:2;
+    grid-column-end: 2;
+    grid-row-start: 2 ;
+    grid-row-end: 3;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+.top-header{
+    display: flex;
+    gap: 64px;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 32px;
+    width: 95%;
+    gap:10px;
+}
+.search-bar{
+    width: 95%;
+    border-radius: 25px;
+    height: 25px;
+    border: none;
+    background-color: gainsboro;
+}
+.search-icon{
+    width: 5%;
+}
+.user-info{
+    padding-left:40px;
+    padding-right: 40px;
+    display: flex;
+    width: 35%;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    justify-content: center;
+}
+.user-icon-small{
+    width: 50px;
+    height: 50px;
+    background-image: url(imgs/userprf.jpeg);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50%;
+    border: none;
+}
